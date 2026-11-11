@@ -1,0 +1,53 @@
+E10 color investigation — 2026-11-11
+Base: SDK baec4eaa8b52ac6a73dd0b12f6e5efc704c88c5f (0.6.0-beta.33)
+Target models: T8L20 and T8L30. No device identifiers or credentials belong here.
+
+CONFIRMED SOURCE TRACE
+Homebridge src/homekit/adapters/smart-light.ts exposes Hue/Saturation only when
+smart_light.setColor evidence exists and the method is callable. It combines
+hue/saturation into RGB and invokes light.setColor. No UI rewrite is required.
+
+SDK src/model/capabilities/smart-light.ts gates setColor on T8L02, validates RGB
+and a reported segment count, and dispatches colorCommand.
+src/transport/mqtt/command-router.ts serializes it with dpColorFields.
+src/transport/mqtt/dp-color.ts produces fields a3..b0 for opcode 0206,
+including a local color ID, foreground RGBCW, and explicit segment positions.
+src/transport/dp-preset.ts supplies a T8L02-calibrated RGB-to-RGBCW approximation.
+Consequently removing the model gate alone would reuse an unverified profile.
+
+APP EVIDENCE
+Locally analyzed official EufyLife Android 3.3.12 (743), Dart AOT disassembly.
+LightTransportNewCmd.generateOpcode at 0xb262fc returns bytes [2,6].
+LightTransportNewCmd.generateBLEPayload starts at 0xa7cd78.
+LightTransportNewCmd.getColorData starts at 0xa9a564.
+AbstractCmd.generateMQTTPayload starts at 0xa5c5f4.
+RGBCWColor contains explicit T8L20 and T8L30 branches in color-calculation
+functions. getConstantBySN has distinct values for those model branches;
+other functions and version conditions must be traced before treating those
+values as a complete conversion profile.
+
+These observations establish relevant code locations, not a validated MQTT
+frame for either target. BLE payload and MQTT field layout must be correlated.
+No full app binaries or disassembly are included in this branch.
+
+REPRODUCE
+python3 research/e10-color/trace-app.py /path/to/analysis/asm
+The scanner reads only local app disassembly and produces symbol addresses,
+source hashes and model-branch locations. It cannot connect to lights.
+app-symbols.json records the current scan (151 symbol/model records).
+
+NEXT IMPLEMENTATION GATES
+1. Follow the app's solid-color entry point into LightTransportNewCmd, including
+   haveW, selected positions, local color ID, and model/version branches.
+2. Correlate the generated MQTT payload with the SDK field serializer.
+3. Obtain app-generated known-color vectors for each model or reproduce the
+   entire relevant conversion with independently checkable expected bytes.
+4. Implement model-specific serialization/conversion and offline vector tests.
+5. Perform a supervised primary-color test on one controller per model, with
+   a known starting color to restore. A publish acknowledgement is not proof
+   of physical color, and the current SDK has no authoritative RGB readback.
+6. Only then expose the target model's setColor capability. The existing
+   Homebridge adapter should expose the color picker automatically.
+
+STATUS
+Local investigation branch exists. GitHub fork created at https://github.com/arijoseph/eufy-sdk. Running Homebridge and model gates remain unchanged.

@@ -1,0 +1,792 @@
+{
+  "schema": 1,
+  "device_commands_sent": false,
+  "files": {
+    "controller": {
+      "path": "flutter_charging_business_package/ble/device/t8l00/t8l00_device_controller.dart",
+      "sha256": "385f65604a06d86d8352f3eff29a70d3fa16c8b54c83677ae2e78c956c9ead6c",
+      "symbols": [
+        {
+          "method": "String dyn:get:deviceName",
+          "address": "0x570638",
+          "line": 13
+        },
+        {
+          "method": "_ _T8L00DeviceController&DeviceController&PpsDeviceFeature",
+          "address": "0x6ca688",
+          "line": 23
+        },
+        {
+          "method": "_ getDeviceState",
+          "address": "0x5705f4",
+          "line": 73
+        },
+        {
+          "method": "_ _getDeviceState",
+          "address": "0x570648",
+          "line": 93
+        },
+        {
+          "method": "_ exitLightEffectCmd",
+          "address": "0x5bdea8",
+          "line": 253
+        },
+        {
+          "method": "_ removeListener",
+          "address": "0x5f00e4",
+          "line": 385
+        },
+        {
+          "method": "[closure] bool <anonymous closure>",
+          "address": "0x5f015c",
+          "line": 434
+        },
+        {
+          "method": "[closure] ExitOldLightCmd <anonymous closure>",
+          "address": "0x5f0d00",
+          "line": 455
+        },
+        {
+          "method": "[closure] ExitNewLightCmd <anonymous closure>",
+          "address": "0x5f0d8c",
+          "line": 513
+        },
+        {
+          "method": "_ startOta",
+          "address": "0x6c306c",
+          "line": 567
+        },
+        {
+          "method": "_ T8L00DeviceController",
+          "address": "0x6ca098",
+          "line": 650
+        },
+        {
+          "method": "_ handleMQTTDeviceResponse",
+          "address": "0x6cac6c",
+          "line": 761
+        },
+        {
+          "method": "_ _dealWithMqttResponse",
+          "address": "0x6cacd8",
+          "line": 805
+        },
+        {
+          "method": "_ _handleResponse",
+          "address": "0x6cbb48",
+          "line": 1938
+        },
+        {
+          "method": "_ _notifyCmdResponseListeners",
+          "address": "0x6cbf64",
+          "line": 2328
+        },
+        {
+          "method": "_ _parserPayload",
+          "address": "0x6cc96c",
+          "line": 2444
+        },
+        {
+          "method": "_ _parserlightStatusMode",
+          "address": "0x6cd9d4",
+          "line": 3913
+        },
+        {
+          "method": "_ _parserOTAStatus",
+          "address": "0x6d4554",
+          "line": 4030
+        },
+        {
+          "method": "_ handleZXProtocolDeviceResponse",
+          "address": "0x6d5bdc",
+          "line": 4352
+        },
+        {
+          "method": "_ initTransformer",
+          "address": "0x6d5cc0",
+          "line": 4443
+        },
+        {
+          "method": "_ startHeartBeatCmd",
+          "address": "0x6d623c",
+          "line": 4551
+        },
+        {
+          "method": "_ startHeartBeatCmdT8l0001",
+          "address": "0x6d6558",
+          "line": 4850
+        },
+        {
+          "method": "[closure] HeartBeatCmd <anonymous closure>",
+          "address": "0x6d66d4",
+          "line": 4994
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x6d6750",
+          "line": 5044
+        },
+        {
+          "method": "_ getDeviceSetting",
+          "address": "0x6e22f8",
+          "line": 5232
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x6e247c",
+          "line": 5380
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x6e2580",
+          "line": 5482
+        },
+        {
+          "method": "[closure] GetDeviceSettingCmd <anonymous closure>",
+          "address": "0x6e26c8",
+          "line": 5598
+        },
+        {
+          "method": "_ startBleConnect",
+          "address": "0x77d9fc",
+          "line": 5648
+        },
+        {
+          "method": "_ startBleBind",
+          "address": "0x789058",
+          "line": 5704
+        },
+        {
+          "method": "_ setTime",
+          "address": "0x78a5c4",
+          "line": 5762
+        },
+        {
+          "method": "[closure] TimeSettingCmd <anonymous closure>",
+          "address": "0x78a6a0",
+          "line": 5845
+        },
+        {
+          "method": "_ unbindDevice",
+          "address": "0x78b314",
+          "line": 5911
+        },
+        {
+          "method": "_ startLightEffectNewCmd",
+          "address": "0x8a8a70",
+          "line": 6019
+        },
+        {
+          "method": "[closure] LightTransportNewCmd <anonymous closure>",
+          "address": "0x8a924c",
+          "line": 6616
+        },
+        {
+          "method": "[closure] LightShowCmd <anonymous closure>",
+          "address": "0x8aa110",
+          "line": 6766
+        },
+        {
+          "method": "_ startPreEffectCmd",
+          "address": "0x8c028c",
+          "line": 6880
+        },
+        {
+          "method": "_ setDeviceStatus",
+          "address": "0x8d3674",
+          "line": 7063
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x8d3ac8",
+          "line": 7416
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x8d3bf8",
+          "line": 7532
+        },
+        {
+          "method": "[closure] SetUpDeviceCmd <anonymous closure>",
+          "address": "0x8d3e50",
+          "line": 7747
+        },
+        {
+          "method": "_ asyncBatchUpdateSchedule",
+          "address": "0x9013d8",
+          "line": 7826
+        },
+        {
+          "method": "_ asyncUpdateSchedule",
+          "address": "0x901628",
+          "line": 8046
+        },
+        {
+          "method": "_ updateSchedule",
+          "address": "0x90170c",
+          "line": 8130
+        },
+        {
+          "method": "_ _praseSunTime",
+          "address": "0x904124",
+          "line": 10604
+        },
+        {
+          "method": "[closure] SetScheduleCmd <anonymous closure>",
+          "address": "0x904438",
+          "line": 10682
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x905954",
+          "line": 10891
+        },
+        {
+          "method": "_ newAsyncUpdateSchedule",
+          "address": "0x9059b8",
+          "line": 10932
+        },
+        {
+          "method": "_ newUpdateSchedule",
+          "address": "0x905a9c",
+          "line": 11016
+        },
+        {
+          "method": "[closure] SetScheduleCmd <anonymous closure>",
+          "address": "0x9070e0",
+          "line": 13063
+        },
+        {
+          "method": "_ setSpeedDevice",
+          "address": "0x915bfc",
+          "line": 13272
+        },
+        {
+          "method": "[closure] SpeedCmd <anonymous closure>",
+          "address": "0x915d3c",
+          "line": 13392
+        },
+        {
+          "method": "_ setLightShow",
+          "address": "0x919b74",
+          "line": 13448
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x919d8c",
+          "line": 13639
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0x919ebc",
+          "line": 13755
+        },
+        {
+          "method": "[closure] LightShowCmd <anonymous closure>",
+          "address": "0x91a054",
+          "line": 13894
+        },
+        {
+          "method": "_ setBeatDevice",
+          "address": "0x9d37dc",
+          "line": 13956
+        },
+        {
+          "method": "[closure] BeatCmd <anonymous closure>",
+          "address": "0x9d38e8",
+          "line": 14059
+        },
+        {
+          "method": "_ setNewBeatDevice",
+          "address": "0x9d7c20",
+          "line": 14117
+        },
+        {
+          "method": "[closure] NewLightBeatCmd <anonymous closure>",
+          "address": "0x9d7d4c",
+          "line": 14230
+        },
+        {
+          "method": "_ startConnectWiFi",
+          "address": "0x9da498",
+          "line": 14302
+        },
+        {
+          "method": "_ updateCurrentProductCode",
+          "address": "0x9dcf94",
+          "line": 14390
+        },
+        {
+          "method": "_ setApplicationDevice",
+          "address": "0xb21640",
+          "line": 14426
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0xb217e8",
+          "line": 14586
+        },
+        {
+          "method": "[closure] Null <anonymous closure>",
+          "address": "0xb21918",
+          "line": 14702
+        },
+        {
+          "method": "[closure] LightBeltDebugToolCmd <anonymous closure>",
+          "address": "0xb21ab0",
+          "line": 14841
+        },
+        {
+          "method": "_ deleteSchedule",
+          "address": "0xb50660",
+          "line": 14899
+        },
+        {
+          "method": "[closure] DeleteSchedule <anonymous closure>",
+          "address": "0xb50b98",
+          "line": 14985
+        },
+        {
+          "method": "_ newAsyncBatchUpdateSchedule",
+          "address": "0xb63598",
+          "line": 15043
+        }
+      ]
+    },
+    "color_command": {
+      "path": "flutter_charging_business_package/ble/device/t8l00/cmd/lighting/light_transport_new_cmd.dart",
+      "sha256": "8114d384777c0b5dc869f795610dc813820c4d5127fbc28067b54c643cefb637",
+      "symbols": [
+        {
+          "method": "_ LightTransportNewCmd",
+          "address": "0x8a93f0",
+          "line": 24
+        },
+        {
+          "method": "_ toString",
+          "address": "0xa0c8e0",
+          "line": 1110
+        },
+        {
+          "method": "_ generateBLEPayload",
+          "address": "0xa7cd78",
+          "line": 1444
+        },
+        {
+          "method": "List<int> getColorData",
+          "address": "0xa9a564",
+          "line": 1954
+        },
+        {
+          "method": "List<int> generateOpcode",
+          "address": "0xb262fc",
+          "line": 2828
+        },
+        {
+          "method": "_ getRespondType",
+          "address": "0xc4e568",
+          "line": 2836
+        }
+      ]
+    },
+    "color_conversion": {
+      "path": "flutter_charging_business_package/ble/device/t8l00/cmd/lighting/light_rgb_calculate_color.dart",
+      "sha256": "1aeecbc2903ae4c8c43f94f39da7486ede989150316a2a25d88dfb2a12f87ca4",
+      "symbols": [
+        {
+          "method": "static _ getColorAtOldColor2_0",
+          "address": "0xa64f58",
+          "line": 20
+        },
+        {
+          "method": "_ RGBCWColor",
+          "address": "0xa70728",
+          "line": 16576
+        },
+        {
+          "method": "static _ safeToInt",
+          "address": "0xa70750",
+          "line": 16593
+        },
+        {
+          "method": "static _ calculateP6F15",
+          "address": "0xa70868",
+          "line": 16645
+        },
+        {
+          "method": "static _ roundToDouble",
+          "address": "0xa709c8",
+          "line": 16760
+        },
+        {
+          "method": "static _ calculate2Value",
+          "address": "0xa70b8c",
+          "line": 16907
+        },
+        {
+          "method": "static _ colorTemperatureToBlue",
+          "address": "0xa70ecc",
+          "line": 17161
+        },
+        {
+          "method": "static _ colorTemperatureToGreen",
+          "address": "0xa70f84",
+          "line": 17226
+        },
+        {
+          "method": "static _ colorTemperatureToRed",
+          "address": "0xa71168",
+          "line": 17384
+        },
+        {
+          "method": "static _ mmult3x3",
+          "address": "0xa71324",
+          "line": 17526
+        },
+        {
+          "method": "static _ mmult3x1",
+          "address": "0xa719dc",
+          "line": 18096
+        },
+        {
+          "method": "Map<String, double> g5Values",
+          "address": "0xa71d48",
+          "line": 18392
+        },
+        {
+          "method": "static Map<String, double> g5Values",
+          "address": "0xa71d7c",
+          "line": 18412
+        },
+        {
+          "method": "static _ getWhitePointValue",
+          "address": "0xa71e24",
+          "line": 18484
+        },
+        {
+          "method": "Map<String, double> g4Values",
+          "address": "0xa71e5c",
+          "line": 18508
+        },
+        {
+          "method": "static Map<String, double> g4Values",
+          "address": "0xa71e90",
+          "line": 18528
+        },
+        {
+          "method": "Map<String, double> d5Values",
+          "address": "0xa71f38",
+          "line": 18600
+        },
+        {
+          "method": "static Map<String, double> d5Values",
+          "address": "0xa71f6c",
+          "line": 18620
+        },
+        {
+          "method": "Map<String, double> c5Values",
+          "address": "0xa72014",
+          "line": 18692
+        },
+        {
+          "method": "static Map<String, double> c5Values",
+          "address": "0xa72048",
+          "line": 18712
+        },
+        {
+          "method": "Map<String, double> b5Values",
+          "address": "0xa720f0",
+          "line": 18784
+        },
+        {
+          "method": "static Map<String, double> b5Values",
+          "address": "0xa72124",
+          "line": 18804
+        },
+        {
+          "method": "Map<String, double> d4Values",
+          "address": "0xa721cc",
+          "line": 18876
+        },
+        {
+          "method": "static Map<String, double> d4Values",
+          "address": "0xa72200",
+          "line": 18896
+        },
+        {
+          "method": "Map<String, double> c4Values",
+          "address": "0xa722a8",
+          "line": 18968
+        },
+        {
+          "method": "static Map<String, double> c4Values",
+          "address": "0xa722dc",
+          "line": 18988
+        },
+        {
+          "method": "static _ getValue",
+          "address": "0xa72384",
+          "line": 19060
+        },
+        {
+          "method": "Map<String, double> b4Values",
+          "address": "0xa72404",
+          "line": 19107
+        },
+        {
+          "method": "static Map<String, double> b4Values",
+          "address": "0xa72438",
+          "line": 19127
+        },
+        {
+          "method": "static _ matrixMultiply2x2",
+          "address": "0xa724e0",
+          "line": 19199
+        },
+        {
+          "method": "static _ inverseMatrix2x2",
+          "address": "0xa72994",
+          "line": 19597
+        },
+        {
+          "method": "static _ arrayConstrain",
+          "address": "0xa72d90",
+          "line": 19965
+        },
+        {
+          "method": "static _ convertToNestedList",
+          "address": "0xa730cc",
+          "line": 20250
+        },
+        {
+          "method": "[closure] static List<double> <anonymous closure>",
+          "address": "0xa7313c",
+          "line": 20297
+        },
+        {
+          "method": "static _ minverse",
+          "address": "0xa73184",
+          "line": 20326
+        },
+        {
+          "method": "static _ getMixingLightParameterConstant",
+          "address": "0xa73714",
+          "line": 20353
+        },
+        {
+          "model": "T8L20",
+          "method": "static _ getMixingLightParameterConstant",
+          "address": "0xa74620",
+          "line": 21763
+        },
+        {
+          "model": "T8L30",
+          "method": "static _ getMixingLightParameterConstant",
+          "address": "0xa74db0",
+          "line": 22473
+        },
+        {
+          "method": "[closure] static List<double> <anonymous closure>",
+          "address": "0xa76408",
+          "line": 24571
+        },
+        {
+          "method": "static _ getColorCWData",
+          "address": "0xa7d3c0",
+          "line": 24609
+        },
+        {
+          "method": "static _ getColorAtOldColor",
+          "address": "0xa7dd28",
+          "line": 25409
+        },
+        {
+          "method": "static _ calculateY11",
+          "address": "0xa838f0",
+          "line": 33902
+        },
+        {
+          "method": "static _ calculateV11",
+          "address": "0xa839ec",
+          "line": 33983
+        },
+        {
+          "method": "static _ wCalculation",
+          "address": "0xa84108",
+          "line": 34531
+        },
+        {
+          "method": "static _ calculateColorCValue",
+          "address": "0xa84258",
+          "line": 34640
+        },
+        {
+          "method": "static _ cCalculation",
+          "address": "0xa843a0",
+          "line": 34744
+        },
+        {
+          "method": "static _ calculateColorWValue",
+          "address": "0xa844f0",
+          "line": 34853
+        },
+        {
+          "method": "static _ calculateAE",
+          "address": "0xa84670",
+          "line": 34974
+        },
+        {
+          "method": "[closure] static double <anonymous closure>",
+          "address": "0xa84740",
+          "line": 35052
+        },
+        {
+          "method": "static _ applyGammaCorrection",
+          "address": "0xa8482c",
+          "line": 35137
+        },
+        {
+          "method": "[closure] static double <anonymous closure>",
+          "address": "0xa848f0",
+          "line": 35214
+        },
+        {
+          "method": "static _ normalizeAndScale",
+          "address": "0xa84a44",
+          "line": 35328
+        },
+        {
+          "method": "[closure] static double <anonymous closure>",
+          "address": "0xa84ae8",
+          "line": 35394
+        },
+        {
+          "method": "[closure] static double <anonymous closure>",
+          "address": "0xa84b64",
+          "line": 35443
+        },
+        {
+          "method": "static _ inverseMatrix",
+          "address": "0xa84bcc",
+          "line": 35482
+        },
+        {
+          "method": "[closure] static Array <anonymous closure>",
+          "address": "0xa96b78",
+          "line": 35548
+        },
+        {
+          "method": "static _ calculateK16",
+          "address": "0xa96c74",
+          "line": 35579
+        },
+        {
+          "method": "static _ arrayMmult",
+          "address": "0xa96d78",
+          "line": 35663
+        },
+        {
+          "method": "static _ arrayMmult3x1",
+          "address": "0xa971f8",
+          "line": 36044
+        },
+        {
+          "method": "static _ calculateP2Formula",
+          "address": "0xa97888",
+          "line": 36223
+        },
+        {
+          "method": "static _ getConstantsMapBySN",
+          "address": "0xa978f0",
+          "line": 36265
+        },
+        {
+          "model": "T8L20",
+          "method": "static _ getConstantsMapBySN",
+          "address": "0xa981ec",
+          "line": 37221
+        },
+        {
+          "model": "T8L30",
+          "method": "static _ getConstantsMapBySN",
+          "address": "0xa986d0",
+          "line": 37742
+        },
+        {
+          "method": "static _ getConstantBySN",
+          "address": "0xa99340",
+          "line": 39064
+        },
+        {
+          "model": "T8L20",
+          "method": "static _ getConstantBySN",
+          "address": "0xa99570",
+          "line": 39271
+        },
+        {
+          "model": "T8L30",
+          "method": "static _ getConstantBySN",
+          "address": "0xa99674",
+          "line": 39367
+        },
+        {
+          "method": "static _ getConstantBySN2",
+          "address": "0xa99890",
+          "line": 39570
+        },
+        {
+          "model": "T8L30",
+          "method": "static _ getConstantBySN2",
+          "address": "0xa99d98",
+          "line": 40045
+        },
+        {
+          "method": "static _ compareVersion",
+          "address": "0xa9a0dc",
+          "line": 40356
+        }
+      ]
+    },
+    "mqtt_envelope": {
+      "path": "flutter_charging_business_package/ble/device/t8l00/cmd/base/abstract_cmd.dart",
+      "sha256": "93e7130874438cefcffe429b74bd0e5d2cf3027b0c4a4ce006c2783a516f1a5f",
+      "symbols": [
+        {
+          "method": "_ generateBleCmdData",
+          "address": "0x5bece4",
+          "line": 11
+        },
+        {
+          "method": "[closure] List<int> <anonymous closure>",
+          "address": "0x5ebd60",
+          "line": 1221
+        },
+        {
+          "method": "_ generateMQTTCmdData",
+          "address": "0x5eec58",
+          "line": 1339
+        },
+        {
+          "method": "_ generateMQTTCmd",
+          "address": "0xa4a178",
+          "line": 1712
+        },
+        {
+          "method": "_ generateMQTTPayload",
+          "address": "0xa5c5f4",
+          "line": 1719
+        },
+        {
+          "method": "_ _enumToString",
+          "address": "0xa5a1e4",
+          "line": 1874
+        },
+        {
+          "method": "_ _enumToString",
+          "address": "0xa5a180",
+          "line": 1926
+        }
+      ]
+    }
+  }
+}
